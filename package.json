@@ -1,5 +1,6 @@
 {
   "name": "client",
+  "homepage": "https://Kumarbhaskar24.github.io/Reddit",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -23,7 +24,8 @@
     "yarn": "^1.22.18"
   },
   "scripts": {
-   
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
